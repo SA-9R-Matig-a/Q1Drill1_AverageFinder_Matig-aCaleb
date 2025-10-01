@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Average Finder</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #9267e0, #849bdb);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        div {
+            padding: 40px;
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #average, #result {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>Simple Average Finder</h2>
+        <br>
+        <p>1st Quarter Grade:</p>
+        <input id="score1" type="text" placeholder="Please Enter Your 1st Quarter Grade Here">
+
+        <p>2nd Quarter Grade:</p>
+        <input id="score2" type="text" placeholder="Please Enter Your 2nd Quarter Grade Here">
+
+        <p>3rd Quarter Grade:</p>
+        <input id="score3" type="text" placeholder="Please Enter Your 3rd Quarter Grade Here">
+
+        <p>4th Quarter Grade:</p>
+        <input id="score4" type="text" placeholder="Please Enter Your 4th Quarter Grade Here">
+
+        <button py-click="compute_average">Compute</button>
+
+        <p>Total Average: <span id="average"></span></p>
+        <p>Passed? <span id="result"></span></p>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
